@@ -47,6 +47,22 @@ a:active {
     
     <h1 style="color:#ffffff;"><center><font size=12>Extra</h1></center></font>
 
+
+<div id="map" style="width:400px;height:400px;background:black"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(34.579698, -118.068900),
+    zoom: 16,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVM8dsYzMKVU-3HWmWE4P741mWVqZl-NI&callback=myMap"></script>
+
     
     </a>
       </body>
